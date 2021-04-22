@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>  </title>
+
+<style type="text/css">
+	/*
+	
+	scroll : 내용길이 상관없이 자동 스크롤 생성
+	auto : 내용 초과시에만 스크롤 생성
+	hidden : 초과된 내용 감춤
+	visible : 초과된 내용 그냥 보여줌
+	
+	
+	style="visibility:hidden;">Pooh  -->사진이 차지했던 공간 유지됨.
+	style="display: none;">Pooh -->사진이 차지했던 공간 사라짐.	
+	
+	opacity
+	:투명도 조절
+	:0 -> 투명
+	:1 - >불투명
+	
+	
+	border-radius
+	:모서리 둥글게 만드는 기능.
+	*/
+	div{
+		width: 200px; height: 150px; background-color: powderblue;
+		overflow: auto; 
+		
+	}
+	
+	
+</style>
+</head>
+<body>
+	<div>
+	졸지 마세요~졸지 마세요~졸지 마세요~
+	졸지 마세요~졸지 마세요~졸지 마세요~
+	졸지 마세요~졸지 마세요~졸지 마세요~
+	졸지 마세요~졸지 마세요~졸지 마세요~
+	졸지 마세요~졸지 마세요~졸지 마세요~
+	졸지 마세요~졸지 마세요~졸지 마세요~
+	</div>
+	<hr>
+	<img alt="pooh" src="img/pooh.jpg" style="visibility:hidden; ">Pooh 
+	<hr>
+	<img alt="pooh" src="img/pooh.jpg" style="display:inline-block;opacity: 0.5; border-radius: 100px">Pooh
+	
+	
+</body>
+</html>

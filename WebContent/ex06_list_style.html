@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>  </title>
+<style type="text/css">
+/*
+	적용되는 우선순위 판단하는 것도 중요!
+*/
+ ul>li{                                          /*ul 바로 밑 자식만 영향받음.*/
+ 	list-style-image: url(img/live.jpg);
+ }
+ 
+ /*ol{
+ 	list-style-type:  lower-alpha;
+ 	list-style-position: outside;
+ }*/
+ 
+ ol>li{
+ 	list-style: upper-latin inside url("img/pooh.jpg");
+ } 
+
+</style>
+</head>
+<body>
+<h1>목차 만들기 -css - list-style 적용</h1>	
+	<ul>
+		<li>KIA</li>
+			<ol>
+				<li>K3</li>
+				<li>K5</li>
+				<li>K7</li>
+			</ol>
+		<li>HYUNDAI</li>
+		<li>SAMSUNG</li>
+			
+	</ul>
+</body>
+</html>

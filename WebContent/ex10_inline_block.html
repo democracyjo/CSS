@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>  </title>
+<style type="text/css">
+/*
+	in-line요소는 width, height 적용 안됨
+				margin-top, margin-bottom 적용안됨(left/right은 적용됨.)
+
+
+*/
+	#a{
+		background-color: pink; width: 200px; height: 200px;
+		display: inline-block; 							/* display: inline이지만 block이기도 하게 만드는*/
+	}
+	#b{
+		background-color: powderblue;margin: 20px; 
+	}
+	#c{
+		background-color: olive;
+	}
+	
+	.a{
+		background-color: pink; width: 200px; height: 200px;
+	}
+	.b{
+		background-color: powderblue; margin: 20px; 
+	}
+	.c{
+		background-color: olive;
+	}
+
+</style>
+</head>
+<body>
+	<span id="a">span element 1</span><span id="b">span element 1</span><span id="c">span element 1</span>
+	
+	<hr>
+	
+	
+	<div class="a">div element 1</div>
+	<div class="b">div element 1</div>
+	<div class="c">div element 1</div>
+	
+</body>
+</html>

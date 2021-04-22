@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>  </title>
+<style type="text/css">
+
+/*
+	Position
+	
+	: element를 특정 위치에 놓기 위한 것 
+	: absolute | relative | static(default) | fixed
+	: top / bottom / left / right  <--실질적으로 움직이게끔 해주는 but position을 면저 지정해 줘야 가능함.
+	: 어떻게 포지션을 주냐에 따라, element위에 element가 올라갈 수도 있음.
+	
+	
+	1)absolute  기준점: 상위 꼭짓점.
+	2)relative  기준점: 원래 위치에서. --다른 element 위치선정에 영향미침.
+	4)fixed 	스크롤이 내려가도 항상 그 위치에 고정.
+	
+	z-index
+	layer가 겹쳐있을 때 이것들의 순서를 정하는 것.(누가 가장 겉표면에 보여질 것이냐)
+	숫자가 높은 게 우선순위.
+	단, position이 되어있어야 가능.
+*/
+
+	div{width: 200px; height: 100px;}
+	.a{
+		background-color:  powderblue;
+	}
+	.b{
+		background-color: pink;
+		position: relative; 		
+		top: 50px; left:  20px; 
+		z-index: 10;
+	}
+	.c{
+		background-color: olive;
+		position: relative;
+		z-index: 5;
+	}
+	
+	h3{
+		width: 200px; height: 150px;
+		border:  dashed 3px orange;
+		position: fixed;top: 20px; right: 20px;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="a">div element 1</div>
+	<div class="b">div element 2</div>
+	<div class="c">div element 3</div>
+	
+	<h3>오늘 본 상품</h3>
+	배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>
+	배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>
+	배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>배고팡<br>
+</body>
+</html>

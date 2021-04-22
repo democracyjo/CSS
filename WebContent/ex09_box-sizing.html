@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>  </title>
+
+<style type="text/css">
+/*
+	width = width + padding + border-width
+	height = height + padding + border-width
+	
+	계산을 해서 적용시켜야 함. 
+	연산하지 않고도 가능하게 하는 게 box-sizing!
+	
+*/
+	#a{ 
+		width: 300px; height: 200px; background-color: powderblue;
+		padding: 30px;
+		border: dashed 10px pink;
+	}
+	#b{ 
+		width: 300px; height: 200px; background-color: pink;
+		padding: 30px;
+		border: dashed 10px powderblue;
+		box-sizing: border-box; 
+	}
+	#c{ 
+		width: 300px; height: 200px; background-color: olive;
+		border: dashed 10px yellow;
+		box-sizing:border-box;
+		border-radius: 160px;
+	}
+
+</style>
+</head>
+<body>
+	<div id="a">box-sizing practice</div>
+	<div id="b">box-sizing practice</div>
+	<div id="c">box-sizing practice</div>
+	
+</body>
+</html>

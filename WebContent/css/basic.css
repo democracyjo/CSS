@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* 이미 CSS file 이기 때문에 <style></style> 필요없음 */
+/*
+	CSS주석 -이 영역에서는 CSS문법만 허용됨.
+	selector {property:value; ...}
+*/
+	/* 1.태그로 적용하기 */
+	h1{color:red;text-decoration:underline;}
+	h1,h3{border:dashed 10px skyblue;}
+	
+	/* 2. class로 적용하기  -class는 . 로 칭한다. 
+		-하나의 요소에 여러개의 css를 적용가능. 중복적용하고 싶을 때 (공백으로 구분해서)
+			ex) <h1 class="a b">
+	*/
+	.a{background-color:pink}
+	.b{font-family: 궁서체; font-size: 30px}
+	
+	/* 
+		3. id로 적용하기 - id는 #으로 칭한다. 
+		-id는 하나의 element에 한개만 적용가능함.
+		-JavaScript에서 id를 활용 많이 하기 때문에 이걸 고려해서 사용할 때 id사용.
+		-id는 유일해야 함. (JS까지 고려했을 때)
+		-css 만을 생각한다면 class로 적용하는 걸 권장.
+	*/
+	#a{border-radius: 30px}
+	#b{text-align: center;}
+	
+	/*
+		4.CSS Selector <- Markup 에 손을 대지 않고도 CSS할 수 있는 방법.
+		*DOM - Markup 트리구조가 아주 중요함. 
+	*/
+	div p{background-color: pink}
+	
+	/*
+		5. 속성으로 찾기
+		[] : 속성을 뜻함.
+	*/
+	input{border: 1px red solid;}
+	input[type="text"] {background-color: pink;}
+	
+	/*
+		속성의 값이 d로 끝나는....
+	*/
+	input[name$=d]{color:blue} /* $는 특정단어로 끝나는 */
+	input[name^=n]{font-size: 40px}
+	
+	table {
+	width: 480px; height: 300px; border: double 3px red;border-collapse:collapse;}
+	th,td {
+	border: solid gray 1px;text-align: center;
+}
+	table tr th:first-child {width: 70px}
+	table tr th:last-child {width: 200px}
+	
+	table tr:nth-child(1){background-color: pink;color: green;}
+	table tr:nth-child(3n) {
+	background-color: purple;}
+	/* 해석하는 능력 필요. */

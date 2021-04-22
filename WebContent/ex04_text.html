@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>  </title>
+<style type="text/css">
+ span{background-color: pink}
+ div{background-color: lightblue}
+
+ .div{
+ 	/*font-family: 궁서체;
+ 	font-size: 24px;
+ 	font-style:  oblique;
+ 	font-weight: bold;
+ 	text-indent:  30px
+ 	word-spacing: 50px; */
+ 	
+ 	/*font 속성 하나로 여러개의 값 설정 순서 중요(style weight size /line-height family)
+ 		line-height : 값; - 숫자 1은 100%와 동일(변화없음) 2=200%
+ 	*/
+ 	font: italic bold 20px /1 궁서체;
+ 	word-spacing: 20px;
+ 	
+}
+
+	a{text-decoration: none;}
+	/*코딩순서가 중요 : link -> visited-> hover -> active*/
+	/*방문한 적이 없는 경우*/
+	a:link {color: red}
+
+	/*방문한 적이 있는 경우*/
+	a:visited {	
+	color: gray;
+}
+	/*마우스를 올렸을 때 */
+	a:hover {
+	text-decoration: underline;font-style: italic;color: orange;
+}
+	/*클릭을 하고 있는 동안*/
+	a:active {
+	color: green;text-decoration: line-through;
+}
+</style>
+</head>
+<body>
+	<!-- 
+		div tag vs span tag
+		공통점: 블럭을 잡기 위해 사용되는 태그
+		1. div - block 요소 (한행모두 차지)
+		
+		2. span - in-line 요소 (개행없이 그 영역만 차지)		
+	 -->
+오늘은 <span>불금</span>이다
+어서 끝내고 <div>불금</div>을 즐기고 싶다	
+
+<hr>
+ <div class="div">
+ 오늘은 조 발표가 있어요. 기대되나요? 주말에는 과제를 꼭 해오세요!!
+ 오늘은 조 발표가 있어요. 기대되나요? 주말에는 과제를 꼭 해오세요!!
+ 오늘은 조 발표가 있어요. 기대되나요? 주말에는 과제를 꼭 해오세요!!
+ 오늘은 조 발표가 있어요. 기대되나요? 주말에는 과제를 꼭 해오세요!!
+ </div>
+ 
+ <hr>
+ <a href="http://www.naver.com">naver</a><br>
+ <a href="http://www.hrd.go.kr">노동부</a><br>
+ <a href="http://www.kosta.or.kr">kosta</a><br>
+ <a href="http://www.daum.net">daum</a><br>
+ 
+ 
+ <!-- 
+ 	vertical align 속성은 block 요소에는 적용 안됨. in-line요소에만 적용됨.
+ 	
+ 	그러나, 적용할 수 있는 방법이 존재.
+ 	display를 통해서 인위적으로 표현되는 형식을 바꿔주는 것.
+ 	display:table-cell;
+  -->
+ <h3 style="border: solid 1px red;width: 400px; height: 200px; text-align: center;display:table-cell; vertical-align: middle;">Happy Friday!</h3>
+</body>
+</html>
